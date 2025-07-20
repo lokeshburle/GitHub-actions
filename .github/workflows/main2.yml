@@ -1,0 +1,9 @@
+on:
+ workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: Production   # Test environment
+
+    steps:
+      - run: echo "Deploying to staging"
