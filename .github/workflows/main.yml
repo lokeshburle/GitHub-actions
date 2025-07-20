@@ -1,0 +1,14 @@
+name: testing
+on:
+  pull_request:
+    branches: ["main"]
+jobs:
+  job1:
+   runs-on: ubuntu-latest
+   steps:
+    - name: checkout the code
+      uses: actions/checkout@v4
+    
+  
+    
+    
