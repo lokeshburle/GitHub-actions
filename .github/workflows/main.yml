@@ -2,12 +2,25 @@ name: testing
 on:
   pull_request:
     branches: ["main"]
+  workflow_dispatch:
+      
+  
 jobs:
   job1:
    runs-on: ubuntu-latest
+   strategy:
+     matrix:
+       node:
+        - 14
+        - 16
+        - 18
    steps:
     - name: checkout the code
       uses: actions/checkout@v4
+    - name: setup node
+      uses: actions/setup-node@v4
+      with:
+        node-versions: ${{matrix.node}}
     
   
     
