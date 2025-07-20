@@ -6,4 +6,4 @@ jobs:
     environment: Dev   # Test environment
 
     steps:
-      - run: echo "Deploying to staging"
+      - run: echo "Deploying to staging" 
