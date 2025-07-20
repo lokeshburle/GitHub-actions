@@ -7,3 +7,8 @@ jobs:
 
     steps:
       - run: echo "Deploying to staging" 
+      - name: Start Timer
+        uses: JesperDramsch/action-timer@v1
+        with:
+          action: start
+
