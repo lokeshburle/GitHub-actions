@@ -11,7 +11,7 @@ jobs:
    environment: production
    strategy:
      matrix:
-       node:
+       node: 
         - 14
         - 16
         - 18
