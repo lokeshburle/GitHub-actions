@@ -3,7 +3,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment: Production   # Test environment
+    environment: Dev   # Test environment
 
     steps:
       - run: echo "Deploying to staging"
