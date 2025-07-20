@@ -21,6 +21,12 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-versions: ${{matrix.node}}
+    - name: print env secrets
+      run: echo $API_PROD_ENV
+      env:
+        API_PROD_ENV: ${{secrets.API_PROD_ENV}}
+       
+     
     
   
     
